@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="iPulseApp1.LogInPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <BoxView x:Name="_bg__log_in"
+				Color="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="0,0,428,928" />
+            
+            <BoxView x:Name="Email"
+				CornerRadius="13"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="27,358,367,61"
+                 Opacity="0"/>
+            <Image x:Name="Email1"
+					Source="Rec.png"
+					AbsoluteLayout.LayoutBounds="27,358,367,61" />
+
+        <BoxView x:Name="Password"
+				CornerRadius="13"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="27,449,367,61"
+                 Opacity="0"/>
+            <Image x:Name="Password1"
+					Source="Rec.png"
+					AbsoluteLayout.LayoutBounds="27,449,367,61" />
+
+            <BoxView x:Name="rectangle_6"
+				CornerRadius="13"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="34,662,365,59" 
+                 xct:ShadowEffect.Color="Black"
+                 xct:ShadowEffect.Radius="8"
+                 xct:ShadowEffect.Opacity="0.25"
+                 xct:ShadowEffect.OffsetY="5"/>
+
+            <BoxView x:Name="rectangle_5"
+				CornerRadius="11"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="27,99,60,60"
+                 Opacity="0"
+                 />
+            <Image x:Name="BackIcon1"
+					Source="BackIcon.png"
+					AbsoluteLayout.LayoutBounds="27,99,60,60" />
+
+            <AbsoluteLayout x:Name="BackImg"
+				 AbsoluteLayout.LayoutBounds="39,111,35,34">
+
+                <Image x:Name="shape_ek4"
+					Source="shape_ek4.png"
+					AbsoluteLayout.LayoutBounds="10.21,5.67,11.67,22.67" />
+            </AbsoluteLayout>
+
+            <Label x:Name="log_in"
+				FontFamily="Poppins-SemiBold"
+				FontSize="20"
+				TextColor="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="182,678,79,47"
+				Text="Log In"
+			 />
+
+
+            <AbsoluteLayout x:Name="PasswordA"
+				 AbsoluteLayout.LayoutBounds="43,467,24,24">
+
+            <Image x:Name="PasswordImg"
+					Source="shape_ek1.png"
+					AbsoluteLayout.LayoutBounds="5,3,14,18" />
+        </AbsoluteLayout>
+
+
+            <AbsoluteLayout x:Name="eyeL"
+				 AbsoluteLayout.LayoutBounds="357,467,24,24">
+
+            <Image x:Name="eyeGrey"
+					Source="shape_ek2.png"
+					AbsoluteLayout.LayoutBounds="2,5,20,14" />
+        </AbsoluteLayout>
+
+
+        <AbsoluteLayout x:Name="emailA"
+				 AbsoluteLayout.LayoutBounds="43,375,24,24">
+
+                <Image x:Name="email"
+					Source="shape_ek3.png"
+					AbsoluteLayout.LayoutBounds="3,6.5,18,14" />
+        </AbsoluteLayout>
+
+            <AbsoluteLayout x:Name="eyeP"
+				 AbsoluteLayout.LayoutBounds="357,467,24,24">
+
+                <Image x:Name="eyePink"
+					Source="eyeP.png"
+                    Opacity="0"
+					AbsoluteLayout.LayoutBounds="2,5,20,14"
+                    Scale="1.4"/>
+            </AbsoluteLayout>
+
+
+            <Label x:Name="log_in_ek1"
+				FontFamily="Poppins-SemiBold"
+				FontSize="36"
+				TextColor="#000000"
+				AbsoluteLayout.LayoutBounds="34,190,176,118"
+				Text="Log In"
+			 />
+            <Label x:Name="welcome_back__log_in_to_your_account_here"
+				FontFamily="Poppins-Regular"
+				FontSize="18"
+				TextColor="#C0C0C2"
+				AbsoluteLayout.LayoutBounds="34,250,297,78"
+				Text="Welcome Back! "
+			 />
+            <Label x:Name="log_in_to_your_account_here"
+				FontFamily="Poppins-Regular"
+				FontSize="18"
+				TextColor="#C0C0C2"
+				AbsoluteLayout.LayoutBounds="34,278,297,78"
+				Text="Log In to your account here"
+			 />
+
+        <Label x:Name="forgot_your_password"
+				FontFamily="Poppins-Regular"
+				Opacity="0.85"
+				FontSize="16"
+				TextColor="#C0C0C2"
+				AbsoluteLayout.LayoutBounds="42,518,289,76"
+				Text="Forgot your password? "
+			 />
+            <Label x:Name="reset_now"
+				FontFamily="Poppins-Medium"
+				Opacity="0.8"
+				FontSize="16"
+				TextColor="#E5005A"
+				AbsoluteLayout.LayoutBounds="227,518,289,76"
+				Text="Reset now"
+			 />
+            <Label x:Name="don_t_you_have_an_account"
+				FontFamily="Poppins-regular"
+				FontSize="16"
+				TextColor="#C0C0C2"
+				AbsoluteLayout.LayoutBounds="61,750,225,76"
+				Text="Don't you have an account? "
+			 />
+            <Label x:Name="sign_up"
+				FontFamily="Poppins-Medium"
+				FontSize="16"
+				TextColor="#E5005A"
+				AbsoluteLayout.LayoutBounds="284,750,303,76"
+				Text=" Sign Up"/>
+            
+            <Button x:Name="BackButton" Text="" CornerRadius="13" Opacity="1" AbsoluteLayout.LayoutBounds="27,99,60,60" BackgroundColor="Transparent" Clicked="BackButton_Clicked"/>
+            <Button x:Name="SendToSignUp" Text="" CornerRadius="10" Opacity="1" AbsoluteLayout.LayoutBounds="284,750.5,68,20" BackgroundColor="Transparent" Clicked="SendToSignUp_Clicked" />
+            
+
+            <Entry x:Name="EmailEnt"
+				FontFamily="Poppins-Regular"
+				FontSize="18"
+				TextColor="#C0C0C2"
+				AbsoluteLayout.LayoutBounds="74,357,290,61"
+				Placeholder="Email address"
+                Background="Transparent"
+                Keyboard="Plain"
+			/>
+
+            <Entry x:Name="PassEnt"
+				FontFamily="Poppins-Regular"
+				FontSize="18"
+				TextColor="#C0C0C2"
+				AbsoluteLayout.LayoutBounds="74,449,290,61"
+				Placeholder="Password"
+                IsPassword="True"
+                Background="Transparent"
+                Keyboard="Plain"
+            />
+
+            <Button x:Name="PassVisible" Text="" CornerRadius="18" Opacity="1" AbsoluteLayout.LayoutBounds="357,467,24,24" BackgroundColor="Transparent" Clicked="PassVisible_Clicked"/>
+            <Button x:Name="LoginBTN" Text="" CornerRadius="18" Opacity="1" AbsoluteLayout.LayoutBounds="34,662,365,59" BackgroundColor="Transparent" Clicked="LoginBTN_Clicked"/>
+            <Button x:Name="ResetBTN" Text="" CornerRadius="11" Opacity="1" AbsoluteLayout.LayoutBounds="224,519,90,20" BackgroundColor="Transparent" Clicked="ResetBTN_Clicked"/>
+            
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

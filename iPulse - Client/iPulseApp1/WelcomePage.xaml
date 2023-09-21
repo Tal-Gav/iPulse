@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="iPulseApp1.WelcomePage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <AbsoluteLayout x:Name="page_welcome_screen_ek2"
+				 AbsoluteLayout.LayoutBounds="0,-40,428,926" >
+
+                <BoxView x:Name="_bg__welcome_screen_ek3"
+					Color="#FFFFFF"
+					AbsoluteLayout.LayoutBounds="0,0,428,1000" />
+                <Image x:Name="ipulse___blue_1"
+					Source="ipulse___blue_1.png" 
+					AbsoluteLayout.LayoutBounds="28,250,163,48" Opacity="0"/>
+
+                <Image x:Name="ipulseBlue2"
+					Source="ipulseB3.png"
+					AbsoluteLayout.LayoutBounds="-479,100,1176,347" Scale="0.14" />
+                
+
+                <Label x:Name="welcome_to_ipulse"
+					FontFamily="Poppins-SemiBold"
+					FontSize="34"
+					TextColor="#000000"
+					AbsoluteLayout.LayoutBounds="28,338,423,118"
+					Text="Welcome to iPulse"/>
+                <Label x:Name="the_best_app_to_measure_your_heart_rate_and_call_for_help_in_need"
+					FontFamily="Poppins-Regular"
+					FontSize="18"
+					TextColor="#C0C0C2"
+					AbsoluteLayout.LayoutBounds="28,402,371,106"
+					Text="Observe your pulse stats and call for help in emergency"/>
+
+
+
+                <BoxView x:Name="rectangle_2"
+					CornerRadius="13"
+					Color="#E5005A"
+					AbsoluteLayout.LayoutBounds="29,701,371,63"
+                     xct:ShadowEffect.Color="Black"
+                     xct:ShadowEffect.Radius="8"
+                     xct:ShadowEffect.Opacity="0.25"
+                     xct:ShadowEffect.OffsetY="5"/>
+
+                <Button x:Name="LogInBTN" Text="" CornerRadius="13" Opacity="0" AbsoluteLayout.LayoutBounds="29,701,371,63" />
+                
+                <BoxView x:Name="rectangle_3"
+					CornerRadius="13"
+					Color="#FFF2F5"
+					AbsoluteLayout.LayoutBounds="29,791,371,63"
+                     xct:ShadowEffect.Color="Black"
+                     xct:ShadowEffect.Radius="8"
+                     xct:ShadowEffect.Opacity="0.25"
+                     xct:ShadowEffect.OffsetY="5"/>
+                <Label x:Name="log_in"
+					FontFamily="Poppins-SemiBold"
+					FontAttributes="Bold"
+					FontSize="20"
+					TextColor="#FFFFFF"
+					AbsoluteLayout.LayoutBounds="186,718,137,77"
+					Text="Log In"/>
+
+                <Label x:Name="sign_up"
+					FontFamily="Poppins-Regular"
+					FontSize="20"
+					TextColor="#494961"
+					AbsoluteLayout.LayoutBounds="176,809,92,77"
+					Text="Sign Up"/>
+
+                <Button x:Name="SignUpBTN" Text="" CornerRadius="13" Opacity="1" AbsoluteLayout.LayoutBounds="29,791,371,63" BackgroundColor="Transparent" Clicked="SignUpBTN_Clicked" />
+                <Button x:Name="LogInButton" Text="" CornerRadius="13" Opacity="1" AbsoluteLayout.LayoutBounds="29,701,371,63" BackgroundColor="Transparent" Clicked="LogInButton_Clicked" />
+                
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

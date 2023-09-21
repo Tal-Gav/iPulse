@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="iPulseApp1.EmailVerificationLogin"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <BoxView x:Name="_bg__reset_password"
+				Color="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="0,0,428,928" />
+            <BoxView x:Name="rectangle_3"
+				CornerRadius="13"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="27,369,367,61" Opacity="0" />
+            <BoxView x:Name="rectangle_6"
+				CornerRadius="13"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="34,566,365,59"
+                 xct:ShadowEffect.Color="Black"
+                 xct:ShadowEffect.Radius="8"
+                 xct:ShadowEffect.Opacity="0.25"
+                 xct:ShadowEffect.OffsetY="5"
+                     />
+
+            <BoxView x:Name="rectangle_5"
+				CornerRadius="11"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="27,99,60,60" Opacity="0"/>
+            <Image x:Name="BackIcon1"
+					Source="BackIcon.png"
+					AbsoluteLayout.LayoutBounds="27,99,60,60" />
+
+            <AbsoluteLayout x:Name="BackImg"
+				 AbsoluteLayout.LayoutBounds="39,111,35,34">
+
+                <Image x:Name="shape_ek4"
+					Source="shape_ek4.png"
+					AbsoluteLayout.LayoutBounds="10.21,5.67,11.67,22.67" />
+            </AbsoluteLayout>
+            <Label x:Name="Confirm"
+				FontFamily="Poppins-SemiBold"
+				FontSize="20"
+				TextColor="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="179,583,100,50"
+				Text="Confirm"
+			 />
+
+            <Image x:Name="EmailIMG"
+					Source="Rec.png"
+					AbsoluteLayout.LayoutBounds="34,369,367,61" />
+
+            <AbsoluteLayout x:Name="MailIcon"
+				 AbsoluteLayout.LayoutBounds="50,386,24,24"
+				 >
+
+                <Image x:Name="LockIcon"
+					Source="shape_ek1.png"
+					AbsoluteLayout.LayoutBounds="3,6.5,18,14" />
+            </AbsoluteLayout>
+
+            <Label x:Name="enter_your_email_address_in_order_to_reset_your_password"
+				FontFamily="Poppins-Regular"
+				FontSize="18"
+				TextColor="#C0C0C2"
+				AbsoluteLayout.LayoutBounds="34,238,297,78"
+				Text="Enter the verification code you received in your mailbox"
+			 />
+
+            <Label x:Name="reset_password"
+				FontFamily="Poppins-SemiBold"
+				FontSize="36"
+				TextColor="#000000"
+				AbsoluteLayout.LayoutBounds="34,190,368,118"
+				Text="Email Verification"
+			 />
+
+            <Entry x:Name="CodeEnt"
+				FontFamily="Poppins-Regular"
+				FontSize="18"
+				TextColor="#C0C0C2"
+				AbsoluteLayout.LayoutBounds="73,368,290,61"
+				Placeholder="Verification Code"
+                Background="Transparent"
+                Keyboard="Numeric"      
+            />
+
+            <Button x:Name="BackButton" Text="" CornerRadius="13" Opacity="1" AbsoluteLayout.LayoutBounds="28,100,58,58" BackgroundColor="Transparent" Clicked="BackButton_Clicked"/>
+            <Button x:Name="ConfirmBTN" Text="" CornerRadius="18" Opacity="1" AbsoluteLayout.LayoutBounds="34,566,365,59" BackgroundColor="Transparent" Clicked="ConfirmBTN_Clicked"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

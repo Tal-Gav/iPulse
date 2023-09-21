@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="iPulseApp1.HeyPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <BoxView x:Name="_bg__hey"
+				Color="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="0,0,428,928" />
+            <BoxView x:Name="rectangle_1"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="0,0,428,926" />
+            <BoxView x:Name="rectangle_7"
+				CornerRadius="47"
+				Color="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="10,555.5,408,365"     
+				 xct:ShadowEffect.Color="Black"
+                 xct:ShadowEffect.Radius="24"
+                 xct:ShadowEffect.Opacity="0.56"
+                 xct:ShadowEffect.OffsetY="3">
+
+            </BoxView>
+            <Label x:Name="the_best_app_to_watch_your_pulse_rate_and_call_for_help_in_emergency_"
+				FontFamily="Poppins-Regular"
+				FontSize="18"
+				TextColor="#7D7D7D"
+				AbsoluteLayout.LayoutBounds="35,668,356,78"
+				Text="The best app to watch your pulse rate
+and call for help in emergency. "
+			 />
+            <BoxView x:Name="ellipse_1"
+				Color="#C4C4C4"
+				AbsoluteLayout.LayoutBounds="67,757,6,6" 
+                CornerRadius="3"/>
+            <BoxView x:Name="ellipse_3"
+				Color="#C4C4C4"
+				AbsoluteLayout.LayoutBounds="83,757,6,6" 
+                CornerRadius="3"/>
+            <BoxView x:Name="rectangle_8"
+				CornerRadius="3"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="35,757,22,6"
+                />
+            <BoxView x:Name="rectangle"
+				CornerRadius="11"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="324,810,58,58" />
+            <Image x:Name="shape"
+				Source="shape.png"
+				AbsoluteLayout.LayoutBounds="348,808,11.67,22.67" />
+            <Label x:Name="hey__welcome_to_ipulse_"
+				FontFamily="Poppins-Bold"
+				FontSize="30"
+				TextColor="#000000"
+				AbsoluteLayout.LayoutBounds="35,600,387,75"
+				Text="Hey! Welcome to iPulse."
+			 />
+            <Image x:Name="HandsImage"
+				Source="shape2_1.png"
+				AbsoluteLayout.LayoutBounds="70,118,290,290" />
+            <Image x:Name="saly_31_1"
+				Source="Hands.png"
+				AbsoluteLayout.LayoutBounds="5,29,428,428" />
+            <Image x:Name="RightArrow1"
+				Source="RightArrow.png"
+				AbsoluteLayout.LayoutBounds="349,828.5,14,25" Scale="0.9"/>
+            <Image x:Name="RightArrow2"
+				Source="RightArrow.png"
+				AbsoluteLayout.LayoutBounds="349,828.5,14,25" Scale="0.9"/>
+
+            <Button x:Name="BackButton" Text="" CornerRadius="13" Opacity="1" AbsoluteLayout.LayoutBounds="324,810,58,58" BackgroundColor="Transparent" Clicked="BackButton_Clicked"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
