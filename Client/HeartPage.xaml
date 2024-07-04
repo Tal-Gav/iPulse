@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="iPulseApp1.HeartPage"
+             NavigationPage.HasNavigationBar="false"
+			 x:Name="TabbedMain"
+            >
+
+    <ContentPage Title="" Appearing = "ToLogout_CLicked" >
+        <ContentPage.Content>
+            <AbsoluteLayout>
+                
+                <BoxView x:Name="wpL"
+				Color="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="0,0,428,928" />
+
+                <Image x:Name="HeartBackgroundLogout"
+				    Source="HeartBG.png"
+				    AbsoluteLayout.LayoutBounds="0,0,428,928" />
+
+                <BoxView x:Name="TabBarLogout"
+				CornerRadius="34"
+				Color="#FDFDFD"
+				AbsoluteLayout.LayoutBounds="8,830,410,71" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"
+                     />
+
+
+                <BoxView x:Name="CurrentTabHeartLogout"
+				CornerRadius="2"
+				Color="#E5005A"
+                Opacity="0.4"
+				AbsoluteLayout.LayoutBounds="207,890,16,3" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"
+                />
+
+                <BoxView x:Name="HeartBoldLogout"
+				CornerRadius="39"
+				Color="#E5005A"
+                Opacity="1"
+				AbsoluteLayout.LayoutBounds="175,825.5,80,80" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.4"
+                xct:ShadowEffect.OffsetY="0"/>
+
+
+                <Image x:Name="user10Logout"
+				    Source="user10.png"
+				    AbsoluteLayout.LayoutBounds="353,851,28,30" />
+
+                <Image x:Name="heart10Logout"
+				    Source="heart10.png"
+				    AbsoluteLayout.LayoutBounds="197,851,36,32"/>
+
+                <Image x:Name="help10Logout"
+				    Source="help10.png"
+				    AbsoluteLayout.LayoutBounds="277,847,38,38" />
+
+                <Image x:Name="Info10Logout"
+                   Opacity="1"
+				    Source="InfoI.png"
+				    AbsoluteLayout.LayoutBounds="-23,767,310,201" Scale="0.19" />
+
+                <Image x:Name="LogoutLogout"
+				    Source="logout4.png"
+				    AbsoluteLayout.LayoutBounds="40,852.5,28,30" Scale="1.23" />
+
+                <Image x:Name="HeartWhiteLogout"
+				Source="heartWhite6.png"
+				AbsoluteLayout.LayoutBounds="200,853.5,28,30" Scale="1.5"
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.4"
+                xct:ShadowEffect.OffsetY="0"/>
+
+            </AbsoluteLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="">
+        <ContentPage.Content>
+            <AbsoluteLayout>
+                
+                <Image x:Name="HeartBackgroundI"
+				    Source="HeartBG.png"
+				    AbsoluteLayout.LayoutBounds="0,0,428,928" />
+
+
+                <Label x:Name="InfoLbl"
+				FontFamily="PoppinsSemiBold"
+				FontSize="36"
+				TextColor="#000000"
+				AbsoluteLayout.LayoutBounds="22,127,190,79"
+				Text= "Info"
+			 />
+                <Image x:Name="ipulseBlue2"
+					Source="ipulseB3.png"
+                    Opacity="0.5"
+					AbsoluteLayout.LayoutBounds="-375,530,1176,347" Scale="0.175" />
+
+                <Label x:Name="CreditLbl"
+				FontFamily="Poppins-Regular"
+				FontSize="22"
+				TextColor="#000000"
+				AbsoluteLayout.LayoutBounds="22,230,400,79"
+				Text= "The iPulse app was made by 
+                       Tal Gavrielov in 2022." />
+
+
+                <BoxView x:Name="TabBarInfo"
+				CornerRadius="34"
+				Color="#FDFDFD"
+				AbsoluteLayout.LayoutBounds="8,830,410,71" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"
+                     />
+
+                <BoxView x:Name="CurrentTabInfo1"
+				CornerRadius="2"
+				Color="#E5005A"
+                Opacity="0.4"
+				AbsoluteLayout.LayoutBounds="207,890,16,3" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"
+                />
+
+                <BoxView x:Name="HeartBoldInfo"
+				CornerRadius="39"
+				Color="#E5005A"
+                Opacity="1"
+				AbsoluteLayout.LayoutBounds="175,825.5,80,80" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.4"
+                xct:ShadowEffect.OffsetY="0"/>
+
+
+                <Image x:Name="user10Info"
+				    Source="user10.png"
+				    AbsoluteLayout.LayoutBounds="353,851,28,30" />
+
+                <Image x:Name="heart10Info"
+				    Source="heart10.png"
+				    AbsoluteLayout.LayoutBounds="197,851,36,32"/>
+
+                <Image x:Name="help10Info"
+				    Source="help10.png"
+				    AbsoluteLayout.LayoutBounds="277,847,38,38" />
+
+                <Image x:Name="Info10Info"
+                   Opacity="1"
+				    Source="InfoI.png"
+				    AbsoluteLayout.LayoutBounds="-23,767,310,201" Scale="0.19" />
+
+                <Image x:Name="LogoutInfo"
+				    Source="logout4.png"
+				    AbsoluteLayout.LayoutBounds="40,852.5,28,30" Scale="1.23" />
+
+                <Image x:Name="HeartWhiteInfo"
+				Source="heartWhite6.png"
+				AbsoluteLayout.LayoutBounds="200,853.5,28,30" Scale="1.5"
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.4"
+                xct:ShadowEffect.OffsetY="0"/>
+
+                <BoxView x:Name="CurrentTabInfo"
+				CornerRadius="2"
+				Color="#E5005A"
+                Opacity="0.4"
+				AbsoluteLayout.LayoutBounds="124.5,890,16,3" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"
+                />
+
+            </AbsoluteLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    
+    <ContentPage Title="">
+        <AbsoluteLayout>
+
+
+            <BoxView x:Name="wpHE"
+				Color="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="0,0,428,928" />
+
+            <Image x:Name="HeartStart"
+			    Source="HeartStartGIF.gif"
+                
+			    AbsoluteLayout.LayoutBounds="0,0,428,928" />
+
+            <BoxView x:Name="ConnectIcon"
+				CornerRadius="34"
+				Color="#FDFDFD"
+				AbsoluteLayout.LayoutBounds="336,180,71,71" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"
+                Scale="0.8"
+                     />
+
+            <Image x:Name="ConnectBoardIcon"
+				    Source="BoardIcon.png"
+				    AbsoluteLayout.LayoutBounds="336,180,71,71" Scale="0.43" Rotation="270"/>
+
+            <Button x:Name="ConnectToBoardBTN"
+				BackgroundColor="Transparent"
+                CornerRadius="34"
+                AbsoluteLayout.LayoutBounds="336,180,71,71" 
+                Clicked="ConnectToBoardBTN_Clicked"
+            />
+
+            <BoxView x:Name="rectangle_6"
+				CornerRadius="33"
+				Color="#E5005A"
+                Opacity="1"
+				AbsoluteLayout.LayoutBounds="142.5,689,144,66" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="12"
+                xct:ShadowEffect.Opacity="0.3"
+                xct:ShadowEffect.OffsetY="0"
+                     />
+
+
+            <Label x:Name="measure"
+				FontFamily="Poppins-Medium"
+				FontSize="22"
+				TextColor="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="166,706,122,48"
+				Text="Measure"
+			 />
+
+                <Label x:Name="measureLbl"
+				FontFamily="PoppinsSemiBold"
+				FontSize="36"
+				TextColor="#000000"
+				AbsoluteLayout.LayoutBounds="22,127,190,79"
+				Text= "Measure"
+			 />
+                <Button x:Name="ButtonMsr"
+				BackgroundColor="Transparent"
+                CornerRadius="28"
+                AbsoluteLayout.LayoutBounds="144,689,144,66" 
+                Clicked="ButtonMsr_Clicked"
+            />
+                <Label x:Name="bpmLbl"
+				FontFamily="Poppins-Regular"
+				FontSize= "22"
+				TextColor="#C0C0C2"
+				AbsoluteLayout.LayoutBounds="166,608,114,57"
+				Text="BPM: "
+			 />
+
+                <Label x:Name="BPM"
+				FontFamily="Poppins-Regular"
+				FontSize= "22"
+				TextColor="#C0C0C2"
+				AbsoluteLayout.LayoutBounds="224,608,114,57"
+				Text="---"
+			 />
+
+            <BoxView x:Name="bpmRecI"
+				CornerRadius="2.6"
+				Color="#E5005A"
+                Opacity="0.4"
+				AbsoluteLayout.LayoutBounds="166,636.8,96,3.2" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"/>
+
+            <Image x:Name="line_2"
+				Source="line_2.png"
+				AbsoluteLayout.LayoutBounds="207,893,16,0" />
+
+            <Image x:Name="line_1"
+				Source="line_1.png"
+				AbsoluteLayout.LayoutBounds="166,644,96,0" />
+
+            <BoxView x:Name="TabBarHE"
+				CornerRadius="34"
+				Color="#FDFDFD"
+				AbsoluteLayout.LayoutBounds="8,830,410,71" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"
+                     />
+
+
+            <BoxView x:Name="HeartBold"
+				CornerRadius="39"
+				Color="#E5005A"
+                Opacity="1"
+				AbsoluteLayout.LayoutBounds="175,825.5,80,80" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.4"
+                xct:ShadowEffect.OffsetY="0"/>
+            
+            <BoxView x:Name="CurrentTabHeart"
+				CornerRadius="2"
+				Color="White"
+                Opacity="0.8"
+				AbsoluteLayout.LayoutBounds="206,892,16,3" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"
+                />
+
+            <Image x:Name="user10HE"
+				    Source="user10.png"
+				    AbsoluteLayout.LayoutBounds="353,851,28,30" />
+            
+            <Image x:Name="heart10HE"
+				    Source="heart10.png"
+				    AbsoluteLayout.LayoutBounds="197,851,36,32"/>
+            
+            <Image x:Name="help10HE"
+				    Source="help10.png"
+				    AbsoluteLayout.LayoutBounds="277,847,38,38" />
+            
+            <Image x:Name="Info10HE"
+                   Opacity="1"
+				    Source="InfoI.png"
+				    AbsoluteLayout.LayoutBounds="-23,767,310,201" Scale="0.19" />
+            
+            <Image x:Name="LogoutHE"
+				    Source="logout4.png"
+				    AbsoluteLayout.LayoutBounds="40,852.5,28,30" Scale="1.23" />
+            
+            <Image x:Name="HeartWhiteHE"
+				Source="heartWhite6.png"
+				AbsoluteLayout.LayoutBounds="200,853.5,28,30" Scale="1.5"
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.4"
+                xct:ShadowEffect.OffsetY="0"/>
+
+        </AbsoluteLayout>
+    </ContentPage>
+
+    <ContentPage Title="" Appearing="ToHelp_Clicked" >
+        <AbsoluteLayout>
+
+            <BoxView x:Name="wpH"
+				Color="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="0,0,428,928" />
+
+            <Image x:Name="HeartBackgroundH"
+				    Source="HeartBG.png"
+				    AbsoluteLayout.LayoutBounds="0,0,428,928" />
+
+            <Label x:Name="HelpLbl"
+				FontFamily="PoppinsSemiBold"
+				FontSize="36"
+				TextColor="#000000"
+				AbsoluteLayout.LayoutBounds="22,127,190,79"
+				Text= "Help"
+			 />
+
+            <BoxView x:Name="TabBarHelp"
+				CornerRadius="34"
+				Color="#FDFDFD"
+				AbsoluteLayout.LayoutBounds="8,830,410,71" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"
+                     />
+
+
+    <BoxView x:Name="CurrentTabHearthelp"
+				CornerRadius="2"
+				Color="#E5005A"
+                Opacity="0.4"
+				AbsoluteLayout.LayoutBounds="207,890,16,3" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"
+                />
+
+    <BoxView x:Name="HeartBoldhelp"
+				CornerRadius="39"
+				Color="#E5005A"
+                Opacity="1"
+				AbsoluteLayout.LayoutBounds="175,825.5,80,80" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.4"
+                xct:ShadowEffect.OffsetY="0"/>
+
+
+    <Image x:Name="user10Help"
+				    Source="user10.png"
+				    AbsoluteLayout.LayoutBounds="353,851,28,30" />
+
+    <Image x:Name="heart10Help"
+				    Source="heart10.png"
+				    AbsoluteLayout.LayoutBounds="197,851,36,32"/>
+
+    <Image x:Name="help10Help"
+				    Source="help10.png"
+				    AbsoluteLayout.LayoutBounds="277,847,38,38" />
+
+    <Image x:Name="Info10Help"
+                   Opacity="1"
+				    Source="InfoI.png"
+				    AbsoluteLayout.LayoutBounds="-23,767,310,201" Scale="0.19" />
+
+    <Image x:Name="LogoutHelp"
+				    Source="logout4.png"
+				    AbsoluteLayout.LayoutBounds="40,852.5,28,30" Scale="1.23" />
+
+    <Image x:Name="HeartWhiteHelp"
+				Source="heartWhite6.png"
+				AbsoluteLayout.LayoutBounds="200,853.5,28,30" Scale="1.5"
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.4"
+                xct:ShadowEffect.OffsetY="0"/>
+
+        </AbsoluteLayout>
+    </ContentPage>
+
+    <ContentPage Title="" Appearing="Account">
+        <AbsoluteLayout>
+
+            <BoxView x:Name="wpA"
+				Color="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="0,0,428,928" />
+
+            <Image x:Name="HeartBackgroundA"
+				    Source="HeartBG.png"
+				    AbsoluteLayout.LayoutBounds="0,0,428,928" />
+
+            <Label x:Name="UserLbl"
+				FontFamily="PoppinsSemiBold"
+				FontSize="36"
+				TextColor="#000000"
+				AbsoluteLayout.LayoutBounds="22,127,190,79"
+				Text= "Account"
+			 />
+
+            <BoxView x:Name="TabBarAccount"
+				CornerRadius="34"
+				Color="#FDFDFD"
+				AbsoluteLayout.LayoutBounds="8,830,410,71" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"
+                     />
+
+
+            <BoxView x:Name="CurrentTabHeartAccount"
+				CornerRadius="2"
+				Color="#E5005A"
+                Opacity="0.4"
+				AbsoluteLayout.LayoutBounds="359,890,16,3" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.25"
+                xct:ShadowEffect.OffsetY="5"
+                />
+
+            <BoxView x:Name="HeartBoldAccount"
+				CornerRadius="39"
+				Color="#E5005A"
+                Opacity="1"
+				AbsoluteLayout.LayoutBounds="175,825.5,80,80" 
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.4"
+                xct:ShadowEffect.OffsetY="0"/>
+
+
+            <Image x:Name="user10Account"
+				    Source="user10.png"
+				    AbsoluteLayout.LayoutBounds="353,851,28,30" />
+
+            <Image x:Name="heart10Account"
+				    Source="heart10.png"
+				    AbsoluteLayout.LayoutBounds="197,851,36,32"/>
+
+            <Image x:Name="help10Account"
+				    Source="help10.png"
+				    AbsoluteLayout.LayoutBounds="277,847,38,38" />
+
+            <Image x:Name="Info10Account"
+                   Opacity="1"
+				    Source="InfoI.png"
+				    AbsoluteLayout.LayoutBounds="-23,767,310,201" Scale="0.19" />
+
+            <Image x:Name="LogoutAccount"
+				    Source="logout4.png"
+				    AbsoluteLayout.LayoutBounds="40,852.5,28,30" Scale="1.23" />
+
+            <Image x:Name="HeartWhiteAccount"
+				Source="heartWhite6.png"
+				AbsoluteLayout.LayoutBounds="200,853.5,28,30" Scale="1.5"
+                xct:ShadowEffect.Color="Black"
+                xct:ShadowEffect.Radius="8"
+                xct:ShadowEffect.Opacity="0.4"
+                xct:ShadowEffect.OffsetY="0"/>
+
+            <AbsoluteLayout x:Name="accountIcon"
+				 AbsoluteLayout.LayoutBounds="51.5,336,24,24" >
+
+                <Image x:Name="toneA"
+					Source="tone.png"
+					Opacity="0"
+					AbsoluteLayout.LayoutBounds="8,3,12,12" />
+                <Image x:Name="shapeA"
+					Source="shape.png"
+					AbsoluteLayout.LayoutBounds="4,3,20,22" />
+
+            </AbsoluteLayout>
+
+            <AbsoluteLayout x:Name="emailI"
+				 AbsoluteLayout.LayoutBounds="50,450,24,20">
+
+                <Image x:Name="emailIcon"
+					Source="shape_ek3.png"
+					AbsoluteLayout.LayoutBounds="3,6.5,24,20" />
+            </AbsoluteLayout>
+
+            <Entry x:Name="AccountEnt"
+				FontFamily="Poppins-Regular"
+				FontSize="20"
+				TextColor="#C0C0C2"
+				AbsoluteLayout.LayoutBounds="90,319.5,290,61"
+				Placeholder="Full Name"
+                Background="Transparent"
+                Keyboard="Plain"
+                IsEnabled="False"
+                
+            />
+
+            <Entry x:Name="EmailEnt"
+				FontFamily="Poppins-Regular"
+				FontSize="20"
+				TextColor="#C0C0C2"
+				AbsoluteLayout.LayoutBounds="90,435,290,61"
+				Placeholder="Email Address"
+                Background="Transparent"
+                Keyboard="Plain"
+                IsEnabled="False"  
+            />
+            
+        </AbsoluteLayout>
+    </ContentPage>
+</TabbedPage>
+    
+
+
+    

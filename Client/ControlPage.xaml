@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="iPulseApp1.ControlPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <BoxView x:Name="_bg__control"
+				Color="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="0,0,428,928" />
+            <BoxView x:Name="rectangle_1"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="0,0,428,926" />
+            <BoxView x:Name="rectangle_7"
+				CornerRadius="47"
+				Color="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="10,555,408,365"
+                 xct:ShadowEffect.Color="Black"
+                 xct:ShadowEffect.Radius="24"
+                 xct:ShadowEffect.Opacity="0.56"
+                 xct:ShadowEffect.OffsetY="3">
+
+            </BoxView>
+            <Label x:Name="control_your_health"
+				FontFamily="Poppins"
+				FontAttributes="Bold"
+				FontSize="32"
+				TextColor="#000000"
+				AbsoluteLayout.LayoutBounds="47,600,363,76"
+				Text="Control Your Health"
+			 />
+            <Label x:Name="with_the_ipulse_device_you_can_control_and_see_your_pulse_rate_"
+				FontFamily="Poppins"
+				FontSize="18"
+				TextColor="#7D7D7D"
+				AbsoluteLayout.LayoutBounds="47,668,299,78"
+				Text="With the iPulse device you can control and see your pulse rate."
+			 />
+            <BoxView x:Name="ellipse_1"
+				Color="#C4C4C4"
+				AbsoluteLayout.LayoutBounds="47,757,6,6" CornerRadius="3" />
+            <BoxView x:Name="ellipse_3"
+				Color="#C4C4C4"
+				AbsoluteLayout.LayoutBounds="63,757,6,6" CornerRadius="3" />
+            <BoxView x:Name="rectangle_8"
+				CornerRadius="3"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="79,757,22,6" />
+            <BoxView x:Name="rectangle_6"
+				CornerRadius="13"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="127,810,255,60" >
+
+            </BoxView>
+            <Label x:Name="let_s_go"
+				FontFamily="Poppins-SemiBold"
+				FontSize="20"
+				TextColor="#FFFFFF"
+				AbsoluteLayout.LayoutBounds="210,826.5,110,29"
+				Text="Let's Go"
+			 />
+            <Image x:Name="background_shapes_png_1_images_png_transparent"
+				Source="background_shapes_png_1_images_png_transparent.png"
+				AbsoluteLayout.LayoutBounds="58,119,317,297.65" />
+            <Image x:Name="saly_26"
+				Source="saly_26.png"
+				AbsoluteLayout.LayoutBounds="158,115,200.88,248.42" />
+            <Image x:Name="img"
+				Source="img.png"
+				AbsoluteLayout.LayoutBounds="48,46,210.87,210.87" />
+            <BoxView x:Name="rectangle_9"
+				CornerRadius="11"
+				Color="#E5005A"
+				AbsoluteLayout.LayoutBounds="47,810,58,58" />
+            <Image x:Name="LeftArrow1"
+				Source="LeftArrow.png"
+				AbsoluteLayout.LayoutBounds="67,828.5,14,25" Scale="0.9"/>
+            <Image x:Name="LeftArrow2"
+				Source="LeftArrow.png"
+				AbsoluteLayout.LayoutBounds="67,828.5,14,25" Scale="0.9"/> 
+
+            <Button x:Name="BackButton" Text="" CornerRadius="13" Opacity="1" AbsoluteLayout.LayoutBounds="47,810,58,58" BackgroundColor="Transparent" Clicked="BackButton_Clicked"/>
+            <Button x:Name="GoButton" Text="" CornerRadius="13" Opacity="1" AbsoluteLayout.LayoutBounds="127,810,255,60" BackgroundColor="Transparent" Clicked="GoButton_Clicked"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
